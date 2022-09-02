@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Step Two</title>
+    <link rel="stylesheet" href="secondPage.css">
+</head>
+
+<body onload="Hsc_Institution.focus();">
+
+    <form id="formTwo" action="./thirdPage.html">
+        <div>
+            <label for="Hsc institution" class="required">HSC Institution name</label>
+            <input type="text" id="Hsc_Institution" required>
+        </div>
+        <div>
+            <label for="" class="required"> HSC Board</label>
+            <select id="Hsc__Board" required>
+                <option value="CBSC">CBSC</option>
+                <option value="ICSC">ICSC</option>
+                <option value="State board">State board</option>
+            </select>
+        </div>
+        <div>
+            <label for="" class="required">Score in HSC in percentage</label>
+            <input type="number" id="Hsc__Score" max="100" min="30" required>
+        </div>
+        <div>
+            <label for="SSC Institution" class="required">SSC Institution name</label>
+            <input type="text" id="Ssc__Institution" required>
+        </div>
+        <div>
+            <label for="" class="required" id="sscBoard">SSC Board </label>
+            <select id="sscBoard">
+                <option value="CBSC">CBSC</option>
+                <option value="ICSC">ICSC</option>
+                <option value="State board">State board</option>
+            </select>
+        </div>
+        <div>
+            <label for="" class="required">Score in SSC in percentage</label>
+            <input type="number" id="Ssc__Score" required>
+        </div>
+        <div>
+            <label for="" class="required">Currently pursuing</label>
+            <input type="text" id="Curr__pursuing" required>
+        </div>
+        <div>
+            <label for="" class="required">Current educational institution name</label>
+            <input type="text" id="Curr__institution" required>
+        </div>
+        <div>
+            <label for="" class="required">Overall percentage</label>
+            <input type="text" id="totalPercentage" required>
+        </div>
+        <div>
+            <label for="">Current backlogs if any </label>
+            <input type="text" id="Curr__backlog">
+        </div>
+        <!-- <button onclick="history.back()">Go Back</button> -->
+        <button type="submit">Next Step</button>
+
+    </form>
+    <script src="./secondPage.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Stage 3</title>
+    <link rel="stylesheet" href="thirdPage.css">
+</head>
+
+<body>
+    <div>
+        <form id="formThree" action="./finalPage.html">
+            <div>
+                <label for="photograph">Passport size photograph </label>
+                <input type="file" id="photograph" accept="image/*" onchange="fileValidation1();" required>
+                <span></span>
+            </div>
+            <div>
+                <label>HSC mark sheet </label>
+                <input type="file" id="hsc" accept="image/*,.pdf,.doc" onchange="fileValidation2();" required>
+            </div>
+            <div>
+                <label>SSC mark sheet </label>
+                <input type="file" id="ssc" accept="image/*,.pdf,.doc" onchange="fileValidation3();" required>
+            </div>
+            <div>
+                <label>All mark sheets (PDF or docs)</label>
+                <input type="file" id="allFile" accept="image/*,.pdf,.doc"  onchange="fileValidation4();">
+            </div>
+            <!-- <button onclick="history.back()">Go Back</button> -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./thirdPage.js"></script>
+</body>
+
+</html>

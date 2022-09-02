@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c1e4ec;
+}
+
+.container{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+.error{
+    color: red;
+}
+
+label { 
+    display:block; 
+}
+
+
+label {
+    font-weight: bold;
+}
+.required:after {
+    content:" *";
+    color: red;
+  }

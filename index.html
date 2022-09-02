@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form (Step One)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="Name__first.focus();">
+    <form id="formOne"  action="./secondPage.html">
+        <div class="Name">
+            <label for="username" class="required">Name</label>
+            <input type="text" id="Name__first" name="user-firstName" placeholder="First" required>
+            <input type="text" id="Name__last" name="User-lastName" placeholder="Last" required>
+            <span id="error"></span>
+        </div>
+        <div class="dob">
+            <label for="DOB" class="required">Date Of Birth</label>
+            <input type="date" id="date" required>
+        </div>
+        <div>
+            <label for="email" class="required">Email</label>
+            <input type="text" id="email" required>
+        </div>
+        <div>
+            <label for="fatherName" class="required">Father's Name</label>
+            <input type="text" id="father__firstName" placeholder="First" required>
+            <input type="text" id="fateher__lastName" placeholder="Last" required>
+        </div>
+        <div>
+            <label for="motherName" class="required">Mother's Name</label>
+            <input type="text" id="Mother__firstName" placeholder="First" required>
+            <input type="text" id="Mother__lastName" placeholder="Last" required>
+        </div>
+        <div>
+            <label for="gender" class="required" id="gender">Gender</label>
+            <input type="radio" name="gender" value="male" required>M</input><br>
+            <input type="radio" name="gender" value="female">F</input>
+        </div>
+        <div>
+            <label for="nationality" class="required">Nationality</label>
+            <input type="text" id="nationality" required>
+        </div>
+
+        <div>
+            <label for="homeAddress" class="required">Home Address</label>
+            <input type="text" id="Address__street" placeholder="Stree Address" required>
+        </div>
+        <div>
+            <input type=" text" name="city" id="Address__city" placeholder="City" required>
+            <input id="country" name="country" placeholder="Country" required>
+        </div>
+        <div id="phone">
+            <label for="phoneHome">Telephone-Home</label>
+            <input type="number" name="Telephone-Home" id="phone__mobile" placeholder="### ### ####"required>
+        </div>
+        <div>
+            <label for="phoneMobile">Telephone-Mobile </label>
+            <input type="number" name="Telephone-Mobile" id="phone__mobile" placeholder="### ### ####">
+        </div>
+        <div>
+            <button type="submit" ; class=" btn">Next
+                Step</button>
+        </div>
+
+    </form>
+
+
+    <script src="./formOne.js"></script>
+</body>
+
+</html>
